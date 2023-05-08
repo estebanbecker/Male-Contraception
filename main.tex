@@ -14,6 +14,7 @@
 \usepackage[a4paper, total={7in, 10in}]{geometry}
 
 \usepackage{graphicx, copyrightbox}
+\usepackage{appendix}
 
 \setlength{\parindent}{24pt} 
 
@@ -94,13 +95,81 @@ La faible efficacité vient de la difficulté à retirer le pénis au bon moment
 Elle est donc à considérer comme une méthode peu efficace et selon les professionnels de santé avec lesquels j'ai dialogué, elle ne doit pas être utilisé comme méthode de contraception.
 Cette méthode ne protège pas des IST.
 
-\section{Les méthodes en recherches}
-\subsection{Les étapes de la recherche}
+\section{Les méthodes non validés par la Haute Autorité de Santé}
+
+Pour mieux comprendre comment est validés un médicament voir l'annexe \ref{annexe:etapes_recherche}.
+
+\subsection{La contraception hormonale masculine}
+
+Pour comprendre comment fonctionne la contraception hormonale masculine, il faut comprendre comment fonctionne la production de spermatozoïdes.
+La production de spermatozoïdes est contrôlé par l'axe hypothalamo-hypophyso-gonadique. Il s'agit de la connexion entre l’hypothalamus, l’hypophyse et les gonades. \footcite{HypothalamicPituitaryGonadal2022}
+En fonction du taux de testostérone présent dans le corps l'hypothalamus va libérer des gonadotrophines (GnRH), ce qui va stimuler l'hypophyse. Qui elle a son tour va libérer l'hormone lutéinisante (LH) et l'hormone folliculostimulante (FSH).
+La LH va stimuler les cellules de Sertoli pour lancer la spermatogenèse et produire des spermatozoïdes. La FSH va stimuler les cellules de Leydig pour produire de la testostérone. \footcite{abbeMaleContraception2020}
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.4\textwidth]{images/scientiphique/axe-HPG.png}
+    \caption{Schéma de l'axe hypothalamo-hypophyso-gonadique}
+    \label{fig:axe-hypothalamo-hypophyso-gonadique}
+\end{figure}
+
+Ici les méthodes de contraception hormonale masculine vont viser à augmenter soit le taux de testostérone soit le taux de progestatif, ce qui va tromper l'hypothalamus et l'hypophyse et ainsi diminuer la production de spermatozoïdes. \footcite{abbeMaleContraception2020}
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/scientiphique/axe-HPG-contracepté.png}
+    \caption{Schéma de l'axe hypothalamo-hypophyso-gonadique avec une contraception hormonale masculine}
+    \label{fig:axe-hypothalamo-hypophyso-gonadique-contracepte}
+\end{figure}
+
+La spermatogenèse étant un processus long, les méthodes hormonales ont un délai minimum de 3 mois entre la première prise et la stérilité. 
+
+\subsubsection{La contraception hormonale par injection}
+
+Il existe plusieurs méthodes de contraception hormonale masculine par injection : \footcite{tcherdukianContraceptionMasculineQuelles2020}
+\begin{itemize}
+    \item L'injection intramusculaire de testostérone :
+    \begin{itemize}
+        \item 200 mg de testostérone hebdomadaire 
+        \item 500 mg d’undécanoate de testostérone mensuelle (forme à libération prolongée) \footcite{tcherdukianContraceptionMasculineQuelles2020}
+    \end{itemize}
+    \item L'injection intramusculaire de testostérone et de progestatif. Le progestatif permet de diminuer la production de spermatozoïdes et la testostérone est là pour compenser la diminution de la testostérone due au progestatif. \footcite{longUpdateNovelHormonal2021}
+\end{itemize}
+
+Ainsi l'OMS a testé en 1990 l'injection intramusculaire de 200 mg d'enanthate de testostérone par semaines et dans une seconde étude de 196 avec 349 hommes. Les résultats sont positifs. En effet, sur la seconde étude l'indice de Pearson est de 1.4 grossesse. \footcite{guerinContraceptionMasculineHormonale1996}
+L'OMS a donc validé cette méthode de contraception, mais elle n'a pas autorisé la mise sur le marché de ces produits. Cependant, ces produits étant déjà sur le marché pour traiter d'autres maladies. \footcite{anne-sophiedelcourHommeSousPilule} Il existe des médecins qui prescrivent ces produits pour une contraception masculine. \footcite{guillaumedaudinContraceptesEnqueteDernier2022}
 
 
-Pour mieux comprendre l'état actuel de la recherche, il faut d'abord comprendre comment est développé un médicament.
+\subsection{Les effets secondaires des méthodes hormonales}
+
+Les effets secondaires des méthodes hormonales sont :
+\begin{itemize}
+    \item Augmentation de la libido
+    \item Augmentation de la masse musculaire ou graisseuse
+    \item Agressivité
+    \item Maux de tête
+    \item Acné
+    \item Trouble de l'humeur
+    \item Dépression
+    \item Calvitie précoce \footcites{guillaumedaudinContraceptesEnqueteDernier2022}{anne-sophiedelcourHommeSousPilule}{ContraceptionHormonaleMasculine2016}
+\end{itemize}
+
+Selon certains scientifiques, ces effets secondaires sont trop importants pour être utilisé comme méthode de contraception. Cependant, il est à noter que ces effets secondaires sont semblables à ceux de la contraception féminine. \footcite{ContraceptionHormonaleMasculine2016}
+
+
+
+
+
+
+\listoffigures
+
+
+\begin{appendix}
+
+    \chapter{Les étapes de la recherche} \label{annexe:etapes_recherche}
+
+    Pour mieux comprendre l'état actuel de la recherche, il faut d'abord comprendre comment est développé un médicament.
 Le développement d'un médicament est divisé en plusieurs phases: \footcite{DeveloppementMedicamentInserm}
-
 
 \begin{itemize}
     \item Recherche fondamentale : Il s'agit de la première étape de la recherche.
@@ -125,6 +194,9 @@ Le développement d'un médicament est divisé en plusieurs phases: \footcite{De
 
 Au total, entre le moment où une molécule est identifié par la recherche fondamentale et mis sur le marché il peut s'écouler au moins 10 ans. \footcite{DeveloppementMedicamentInserm} Du plus, a chaque étape la molécule peut être abandonnée et la recherche repart du début. \footcite{denisvanwaerebekeJamesOuRoman2018}
 
+\end{appendix}
+
 \printbibliography
+
 \end{document}
 
