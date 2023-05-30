@@ -10,12 +10,16 @@
 \usepackage{hyperref}
 \usepackage{caption}
 \usepackage{labels}
+\usepackage{pgf-pie}
 
 \usepackage[includefoot,a4paper, total={6.5in, 9.5in}]{geometry}
 
 \usepackage{graphicx, copyrightbox}
 \usepackage{appendix}
 \usepackage{float}
+\usepackage{subcaption}
+\usepackage{pgf-pie}
+\usepackage{tikz}
 
 \setlength{\parindent}{24pt} 
 
@@ -359,16 +363,112 @@ Mais, elle n'avait aucunes connaissances sur la contraception masculine.
 Mais depuis 2016, le planning familial mets l'accent dessus, des médecins en France sont formé et des réunions sont organisé à Paris chaque premier samedi du mois spécialement pour la contraception masculine.
 Cependant, Lydie Porée dit qu'il leur arrive de faire des réunions quasiment vides. \cite{guillaumedaudinContraceptesEnqueteDernier2022}
 
-De plus, on peut noter l'émergence d'autres initiatives tel que l'association \textit{GARCON} \cite{QuiSommesNous}, le collectif \textit{Thomas Bouloù} \cite{ThomasBoulouInterview} ou les BD: \textit{Les Contraceptés enquête sur le derier tabou} de Guillaume Daudin, Stéphane Jourdain et Caroline Lee \cite{guillaumedaudinContraceptesEnqueteDernier2022} et \textit{Le coeur des Zobs} de Bobika \cite{bobikaCoeurZobs2022}, les ateliers créé dans de multiples villes en France. \cites{ContraceptionMasculineComment2023}{OuNousTrouver}{guillaumedaudinContraceptesEnqueteDernier2022} visant à faire connaitre la contraception masculine et à la rendre plus accessible.
+De plus, on peut noter l'émergence d'autres initiatives telle que l'association \textit{GARCON} \cite{QuiSommesNous}, le collectif \textit{Thomas Bouloù} \cite{ThomasBoulouInterview} ou les BD: \textit{Les Contraceptés enquête sur le derier tabou} de Guillaume Daudin, Stéphane Jourdain et Caroline Lee \cite{guillaumedaudinContraceptesEnqueteDernier2022} et \textit{Le coeur des Zobs} de Bobika \cite{bobikaCoeurZobs2022} et les ateliers créé dans de multiples villes en France. \cites{ContraceptionMasculineComment2023}{OuNousTrouver}{guillaumedaudinContraceptesEnqueteDernier2022} visant à faire connaitre la contraception masculine et à la rendre plus accessible.
 
 \section{L'acceptation dans la société}
 
+Est-ce que ce milieu militant est représentatif de la société ?
 
+\subsection{Sondage communauté UTBM}
+Pour répondre à cette question, j'ai réalisé un sondage que j'ai diffusé au courant du mois de mars au sein de l'Université de Technologie de Belfort et sur mes réseaux sociaux. 369 personnes ont répondu au sondage.
 
-Des médecins continu de décourager les hommes à utiliser la vasectomie. \cite{SiContraceptionEtait2021}
+Avant d'analyser les résultats, il faut note que ce sondage a été effectué au sein d'un milieu universitaire avec majoritairement des jeunes de 18 à 25 ans:
+
+\begin{table*}[H]
+    \centering
+    \begin{tabular}{|l|c|}
+    \hline
+    \textbf{Groupe d'âge} & \textbf{Nombre de réponses} \\
+    \hline
+    Moins de 18 ans & 3 \\
+    18 à 25 ans & 310 \\
+    25 à 35 ans & 17 \\
+    35 à 50 ans & 29 \\
+    50 à 70 ans & 10 \\
+    Plus de 70 ans & 0 \\
+    \hline
+    \end{tabular}
+    \caption{Groupe d'âge}
+\end{table*}
+    
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|c|}
+    \hline
+    \textbf{Profession} & \textbf{Nombre de réponses} \\
+    \hline
+    Étudiant & 300 \\
+    Agriculteur & 0 \\
+    Artisan, commerçant ou chef d'entreprise & 1 \\
+    Cadre & 25 \\
+    Employé & 40 \\
+    Ouvrier & 2 \\
+    Retraité & 1 \\
+    \hline
+    \end{tabular}
+    \caption{Profession}
+    \label{tab:Profession}
+\end{table}
+
+De plus, il faut noter que pour toutes les prochaines réponses, les personnes pouvaient ne pas répondre.
+Ce choix a été fait pour éviter qu'une personne arrête le test, car une question était trop privée.
+
+De plus, on note que la répartition entre les personnes de sexe féminin et masculin est la suivante :
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|c|c|}
+    \hline
+    \textbf{Genre} & \textbf{Nombre} & \textbf{Pourcentage (\%)} \\
+    \hline
+    Masculin & 206 & 55.83 \\
+    Féminin & 163 & 44.17 \\
+    \hline
+\end{tabular}
+\caption{Répartition des personnes de sexe féminin et masculin}
+\end{table}
+
+Ainsi, on peut voir que la répartition est assez équilibrée. Cependant, il faut noter que le nombre de personnes de sexe féminin est très inférieur dans les étudiant de l'UTNM.
+En effet, il y a 18\% de personnes de sexe féminin à l'UTBM. \cite{UTBMClassementEcoles}
+Et, bien que dans le personnel la répartition est équilibrée \cite{RapportSocial20202020}, la majorité des réponses venants d'étudiant (voir tableau \ref{tab:Profession}), la répartition est proprtiellement déséquilibrée.
+On peut donc imaginer que les personnes de sexe féminin sont plus intéressé par la contraception que celles de sexe masculin.
+
+Une des questions de ce test était: "Quels moyens de contraception masculine connaissez-vous ?"
+
+À cette réponse, on peut voir plusieurs choses intéressantes :
+\begin{itemize}
+    \item Bien que le préservatif soit le plus cité, on peut voir qu'il ne l'est pas systématiquement. En effet, en discutant avec Loïc Rueff, infirmier à l'UTBM, il m'a dit que le préservatif n'était plus majoritairement vu comme un moyen de protection, mais comme un moyen de protection des MST suite aux campagnes de prévention.
+    \item La vasectomie est citée par 31\% des répondants.
+    \item La méthode thermique est cité par quelques participants.
+    \item Plusieurs personnes ont cité la pilule en précisant qu'elle était encore au stade expérimental.
+\end{itemize}
+
+Par la suite, il a été demandé aux personnes de sexe masculin si elles utilisaient un moyen de contraception masculine, 118 des 203 réponses ont répondu par l'affirmative.
+
+Paris ces 118 personnes 117 personnes ont donné leur moyen de contraception. L'écrasante majorité utilise le préservatif.
+3 ont cité l'anneau et 2 le retrait.
+
+Ensuite, il a été demandé aux personnes de sexe masculin de juger leur niveau de connaissances, de confiance et de possibilité d'utilisation pour une sélection de méthode de contraception masculine.
+
+Les résultats sont les suivants:
+
+\begin{tabular}{|l|c|c|c|c|}
+    \hline
+    \center
+    \textbf{Méthode} & \textbf{Connaissances} & \textbf{Confiance} & \textbf{Probabilité d'utilisation} & \textbf{Efficacité pratique (\%)} \\
+    \hline
+    Préservatif & 6,9 & 8,43 & 6,87 & 85\% \\
+    Vasectomie & 3,92 & 8,54 & 3,16 & 99,80\% \\
+    Retrait & 6,19 & 2,05 & 2,03 & 78\% \\
+    Méthode hormonale & 2,78 & 5,56 & 3,68 & - \\
+    Méthode thermique & 3,57 & 4,17 & 3,15 & - \\
+    \hline
+    \caption{Niveau de connaissances, de confiance et de possibilité d'utilisation}
+\end{tabular}
+    
+
 
 \listoffigures
-
 
 \begin{appendix}
 
