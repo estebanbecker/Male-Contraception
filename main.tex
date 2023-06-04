@@ -11,6 +11,7 @@
 \usepackage{caption}
 \usepackage{labels}
 \usepackage{pgf-pie}
+\usepackage{makecell}
 
 \usepackage[includefoot,a4paper, total={6.5in, 9.5in}]{geometry}
 
@@ -452,28 +453,65 @@ Ensuite, il a été demandé aux personnes de sexe masculin de juger leur niveau
 
 Les résultats sont les suivants:
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|l|c|c|c|c|}
-        \hline
-        \textbf{Méthode} & \textbf{Connaissances} & \textbf{Confiance} & \textbf{Probabilité d'utilisation} & \textbf{Efficacité pratique (\%)} \\
-        \hline
-        Préservatif & 6,9 & 8,43 & 6,87 & 85\% \\
-        Vasectomie & 3,92 & 8,54 & 3,16 & 99,80\% \\
-        Retrait & 6,19 & 2,05 & 2,03 & 78\% \\
-        Méthode hormonale & 2,78 & 5,56 & 3,68 & - \\
-        Méthode thermique & 3,57 & 4,17 & 3,15 & - \\
-        \hline
-    \end{tabular}
-    \caption{Réponses des personnes de sexe masculin sur leur niveau de connaissances, de confiance et de possibilité d'utilisation pour une sélection de méthode de contraception masculine}
+
+
+\begin{table}[ht]
+\centering
+\renewcommand\theadfont{\normalsize\bfseries}
+\renewcommand\theadalign{cc}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+\thead{Méthode} & \thead{Connaissances} & \thead{Confiance} & \thead{Probabilité\\ d'utilisation} & \thead{Efficacité\\ pratique (\%)} \\
+\hline
+Préservatif & 6,9 & 8,43 & 6,87 & 85\% \\
+Vasectomie & 3,92 & 8,54 & 3,16 & 99,80\% \\
+Retrait & 6,19 & 2,05 & 2,03 & 78\% \\
+Méthode hormonale & 2,78 & 5,56 & 3,68 & - \\
+Méthode thermique & 3,57 & 4,17 & 3,15 & - \\
+\hline
+\end{tabular}
+\caption{Réponses des personnes de sexe masculin sur leur niveau de connaissances, de confiance et de possibilité d'utilisation pour une sélection de méthode de contraception masculine}
 \end{table}
 
     
 
 Ainsi, on peut voir que les personnes de sexe masculin considère qu'elles ont bonne connaissance du préservatif et de la vasectomie, mais beaucoup moins des autres.
 Cependant avoir une connnaissance moyenne de la vasectomie n'empêche pas d'avoir une confiance élevée en celle-ci.
-Cependant, on peut voir que les gens ont une très grande confiance envers le préservatif (8.43) mais une très petite avec le retrait (2.05) alors que leur score d'efficacité réelle ne sont écarté que de 6 points.
+Cependant, on peut voir que les gens ont une très grande confiance envers le préservatif (8.43) mais une très petite avec le retrait (2.05) alors que leur scores d'efficacités réelle n'ont que 6 points d'écarts
 De plus, on peut noter que les gens ont peu confiance en la méthode hormonale alors que lors des études, elle a démontré une plus grande efficacité que le préservatif. \cite{abbeMaleContraception2020}
+
+De plus, on peut voir que la seule méthode avec une forte probabilité d'utilisation est uniquement le préservatif, malgré une grande confiance envers la vasectomie. Le caractère définitif de la vasectomie rebutant probablement les potentiels utilisateurs.
+
+La question de la confiance a aussi été demandé aux personnes de sexe féminin, avec les réponses suivantes:
+
+
+\begin{table}[ht]
+\centering
+\renewcommand\theadfont{\normalsize\bfseries}
+\renewcommand\theadalign{cc}
+\begin{tabular}{|l|c|}
+\hline
+\thead{Méthode} & \thead{Confiance} \\
+\hline
+Préservatif & 8,05 \\
+Vasectomie & 8,23 \\
+Retrait & 1,74 \\
+Méthode hormonale & 5,95 \\
+Méthode thermique & 4,05 \\
+\hline
+\end{tabular}
+\caption{Niveau de confiance pour différentes méthodes de contraception masculin pour les personnes de sexe féminin}
+\end{table}
+
+Ainsi, les scores sont très proches, on peut noter que les personnes de sexe féminin font très légèrement moins confiance aux méthodes de contraceptions masculine que les hommes, à l'exception de la méthode hormonale où elles font un peu plus confiance. Cependant, l'échantillon et l'écart sont faibles, ces résultats ne peuvent donc pas être considérés comme une vérité générale.
+
+De plus, lors du questionnaire, j'ai demandé aux hommes de décrire en quelques mots chacune des méthodes de contraception, voici les tendances qui en ressortent :
+
+\begin{itemize}
+    \item \textbf{Préservatif} : Beaucoup de personnes parlent des MST avec raison dans leurs réponses. De plus, il y a plusieurs réponses qui disent que le préservatif est contraignant ou désagréable. Il y a aussi eu quelques réponses appuyant qu'il s'agissait du moyen de contraception parfait pour les relations éphémères. Ce que m'a confirmé Loïs Rueff, en effet, il s'agit de la seule à protéger des MST quand les partenaires ne se sont pas testé.
+    \item \textbf{Vasectomie} : Les réponses ont beaucoup appuyé le côté définitif de la vasectomie. Il faut rappeler qu'elle est potentiellement inversible, mais ça reste une opération complexe. Dans ces réponses, on peut aussi lire beaucoup d'allusion à de la mutilation ou des réponses très épidermique telle que : "Une honte pour tout homme qui se respecte."
+    On voit par là que la vasectomie est un moyen de contraception complexe, avec des personnes ayant de fortes opinions.
+\end{itemize}
 
 \listoffigures
 
